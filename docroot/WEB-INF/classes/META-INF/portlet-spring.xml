@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.liferay.docs.customercare.service.AgentDataEntryLocalService" class="com.liferay.docs.customercare.service.impl.AgentDataEntryLocalServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.AgentDataEntryService" class="com.liferay.docs.customercare.service.impl.AgentDataEntryServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.persistence.AgentDataEntryPersistence" class="com.liferay.docs.customercare.service.persistence.AgentDataEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.docs.customercare.service.CallDataEntryLocalService" class="com.liferay.docs.customercare.service.impl.CallDataEntryLocalServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.CallDataEntryService" class="com.liferay.docs.customercare.service.impl.CallDataEntryServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.persistence.CallDataEntryPersistence" class="com.liferay.docs.customercare.service.persistence.CallDataEntryPersistenceImpl" parent="basePersistence" />
+	<bean id="com.liferay.docs.customercare.service.CustomerInforEntryLocalService" class="com.liferay.docs.customercare.service.impl.CustomerInforEntryLocalServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.CustomerInforEntryService" class="com.liferay.docs.customercare.service.impl.CustomerInforEntryServiceImpl" />
+	<bean id="com.liferay.docs.customercare.service.persistence.CustomerInforEntryPersistence" class="com.liferay.docs.customercare.service.persistence.CustomerInforEntryPersistenceImpl" parent="basePersistence" />
+</beans>

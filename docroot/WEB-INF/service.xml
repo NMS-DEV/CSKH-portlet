@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.liferay.docs.customercare">
+	<author>DuyMB</author>
+	<namespace>CC</namespace>
+	<entity name="CallDataEntry" local-service="true">
+
+		<!-- PK fields -->
+
+		<column name="callDataEntryId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+        <column name="callId" type="String"></column>
+        <column name="startCallDate" type="Date"></column>
+        <column name="endCallDate" type="Date"></column>
+        <column name="queueName" type="String"></column>
+        <column name="callNumber" type="String"></column>
+        <column name="channel" type="String"></column>
+        <column name="waitTime" type="String"></column>
+        <column name="durationTime" type="String"></column>
+        <column name="extension" type="String"></column>
+        <column name="status" type="String"></column>
+        <column name="channelOld" type="String"></column>
+        <column name="channelTo" type="String"></column>
+        <column name="extOfMonitor" type="String"></column>
+        <column name="causeCode" type="String"></column>
+        <column name="sipCause" type="String"></column>
+        <column name="staffName" type="String"></column>
+	</entity>
+	<entity name="CustomerInforEntry" local-service="true">
+
+		<!-- PK fields -->
+
+		<column name="customerInforEntryId" type="long"
+			primary="true">
+		</column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+        <column name="custName" type="String"></column>
+        <column name="custIdentiication" type="String"></column>
+        <column name="phoneNumber" type="String"></column>
+        <column name="address" type="String"></column>
+        <column name="service" type="String"></column>
+        <column name="comment" type="String"></column>
+        <column name="status" type="String"></column>
+        <column name="reason" type="String"></column>
+	</entity>
+	<entity name="AgentDataEntry" local-service="true">
+
+		<!-- PK fields -->
+
+		<column name="agentDataEntryId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+        <column name="agentId" type="long"></column>
+        <column name="queueList" type="String"></column>
+        <column name="extension" type="String"></column>
+	</entity>
+</service-builder>

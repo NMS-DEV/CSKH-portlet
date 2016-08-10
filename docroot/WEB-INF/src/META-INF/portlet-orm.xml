@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.liferay.docs.customercare.model.impl.AgentDataEntryModelImpl">
+		<attributes>
+			<id name="agentDataEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="agentId" />
+			<basic name="queueList" />
+			<basic name="extension" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.docs.customercare.model.impl.CallDataEntryModelImpl">
+		<attributes>
+			<id name="callDataEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="callId" />
+			<basic name="startCallDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="endCallDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="queueName" />
+			<basic name="callNumber" />
+			<basic name="channel" />
+			<basic name="waitTime" />
+			<basic name="durationTime" />
+			<basic name="extension" />
+			<basic name="status" />
+			<basic name="channelOld" />
+			<basic name="channelTo" />
+			<basic name="extOfMonitor" />
+			<basic name="causeCode" />
+			<basic name="sipCause" />
+			<basic name="staffName" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.liferay.docs.customercare.model.impl.CustomerInforEntryModelImpl">
+		<attributes>
+			<id name="customerInforEntryId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="custName" />
+			<basic name="custIdentiication" />
+			<basic name="phoneNumber" />
+			<basic name="address" />
+			<basic name="service" />
+			<basic name="comment">
+				<column name="COMMENT_" />
+			</basic>
+			<basic name="status" />
+			<basic name="reason" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.liferay.docs.customercare.model.impl.AgentDataEntryImpl" name="AgentDataEntry">
+		<table name="CC_AgentDataEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.docs.customercare.model.impl.CallDataEntryImpl" name="CallDataEntry">
+		<table name="CC_CallDataEntry" />
+		<attributes />
+	</entity>
+	<entity class="com.liferay.docs.customercare.model.impl.CustomerInforEntryImpl" name="CustomerInforEntry">
+		<table name="CC_CustomerInforEntry" />
+		<attributes />
+	</entity>
+</entity-mappings>

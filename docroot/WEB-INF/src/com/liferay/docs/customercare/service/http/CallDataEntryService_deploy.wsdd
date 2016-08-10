@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+	<service name="Plugin_CC_CallDataEntryService" provider="java:RPC" style="rpc" use="encoded">
+		<typeMapping xmlns:ns="http://model.customercare.docs.liferay.com" qname="ns:CallDataEntrySoap" type="java:com.liferay.docs.customercare.model.CallDataEntrySoap" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"></typeMapping>
+		<operation xmlns:operNS="urn:http.service.customercare.docs.liferay.com" xmlns:rtns="http://model.customercare.docs.liferay.com" name="addCallDataEntry" qname="operNS:addCallDataEntry" returnQName="addCallDataEntryReturn" returnType="rtns:CallDataEntrySoap" soapAction="">
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="userId" type="tns:long"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="callId" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="queueName" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="callNumber" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="channel" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="waitTime" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="durationTime" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="extension" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="status" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="channelOld" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="channelTo" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="extOfMonitor" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="causeCode" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="sipCause" type="tns:string"></parameter>
+		</operation>
+		<operation xmlns:operNS="urn:http.service.customercare.docs.liferay.com" xmlns:rtns="http://model.customercare.docs.liferay.com" name="updateCallDataEntry" qname="operNS:updateCallDataEntry" returnQName="updateCallDataEntryReturn" returnType="rtns:CallDataEntrySoap" soapAction="">
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="userId" type="tns:long"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="causeCode" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="sipCause" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="status" type="tns:string"></parameter>
+			<parameter xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="callDataEntryId" type="tns:long"></parameter>
+		</operation>
+		<parameter name="allowedMethods" value="addCallDataEntry updateCallDataEntry" />
+		<parameter name="className" value="com.liferay.docs.customercare.service.http.CallDataEntryServiceSoap" />
+		<parameter name="schemaUnqualified" value="http://model.customercare.docs.liferay.com" />
+		<parameter name="typeMappingVersion" value="1.2" />
+		<parameter name="wsdlPortType" value="CallDataEntryServiceSoap" />
+		<parameter name="wsdlServiceElement" value="CallDataEntryServiceSoapService" />
+		<parameter name="wsdlServicePort" value="Plugin_CC_CallDataEntryService" />
+		<parameter name="wsdlTargetNamespace" value="urn:http.service.customercare.docs.liferay.com" />
+	</service>
+</deployment>

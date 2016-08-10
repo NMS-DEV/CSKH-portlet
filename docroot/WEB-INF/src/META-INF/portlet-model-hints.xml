@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.docs.customercare.model.AgentDataEntry">
+		<field name="agentDataEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="agentId" type="long" />
+		<field name="queueList" type="String" />
+		<field name="extension" type="String" />
+	</model>
+	<model name="com.liferay.docs.customercare.model.CallDataEntry">
+		<field name="callDataEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="callId" type="String" />
+		<field name="startCallDate" type="Date" />
+		<field name="endCallDate" type="Date" />
+		<field name="queueName" type="String" />
+		<field name="callNumber" type="String" />
+		<field name="channel" type="String" />
+		<field name="waitTime" type="String" />
+		<field name="durationTime" type="String" />
+		<field name="extension" type="String" />
+		<field name="status" type="String" />
+		<field name="channelOld" type="String" />
+		<field name="channelTo" type="String" />
+		<field name="extOfMonitor" type="String" />
+		<field name="causeCode" type="String" />
+		<field name="sipCause" type="String" />
+		<field name="staffName" type="String" />
+	</model>
+	<model name="com.liferay.docs.customercare.model.CustomerInforEntry">
+		<field name="customerInforEntryId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="custName" type="String" />
+		<field name="custIdentiication" type="String" />
+		<field name="phoneNumber" type="String" />
+		<field name="address" type="String" />
+		<field name="service" type="String" />
+		<field name="comment" type="String" />
+		<field name="status" type="String" />
+		<field name="reason" type="String" />
+	</model>
+</model-hints>
